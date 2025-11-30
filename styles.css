@@ -1,0 +1,279 @@
+/* Estilos basados en el sitio del Ministerio de Salud de Colombia */
+:root {
+    --primary-color: #0072bc;  /* Azul del Ministerio de Salud */
+    --secondary-color: #005a8c;  /* Azul más oscuro para hover/active */
+    --accent-color: #e31837;    /* Rojo para acentos */
+    --text-color: #333;
+    --light-gray: #f8f9fa;
+    --medium-gray: #e9ecef;
+    --dark-gray: #495057;
+    --white: #ffffff;
+}
+
+body {
+    font-family: 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: var(--white);
+    color: var(--text-color);
+    font-size: 16px;
+}
+
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+/* Estilo del encabezado */
+header {
+    background-color: var(--primary-color);
+    color: var(--white);
+    padding: 2rem 0;
+    margin-bottom: 2rem;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.2rem;
+    font-weight: 600;
+    color: var(--accent-color);
+}
+
+header p {
+    margin: 0.5rem 0 0;
+    font-size: 1.1rem;
+    opacity: 0.9;
+}
+
+/* Estilo de las pestañas */
+.tabs {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 2rem;
+    border-bottom: 2px solid var(--primary-color);
+}
+
+.tab-button {
+    padding: 12px 24px;
+    background: transparent;
+    border: none;
+    border-bottom: 3px solid transparent;
+    color: var(--dark-gray);
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    margin-right: 5px;
+    border-radius: 4px 4px 0 0;
+}
+
+.tab-button:hover {
+    background-color: rgba(0, 114, 188, 0.05);
+    color: var(--primary-color);
+}
+
+.tab-button.active {
+    background-color: var(--white);
+    color: var(--primary-color);
+    border-bottom: 3px solid var(--accent-color);
+    font-weight: 600;
+}
+
+/* Contenido de las pestañas */
+.tab-content {
+    display: none;
+    padding: 2rem;
+    background: var(--white);
+    border: 1px solid var(--medium-gray);
+    border-top: none;
+    border-radius: 0 0 4px 4px;
+    margin-bottom: 2rem;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.tab-content.active {
+    display: block;
+    animation: fadeIn 0.5s ease;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Estilos de tipografía */
+h1, h2, h3, h4, h5, h6 {
+    color: var(--primary-color);
+    font-weight: 600;
+    margin-top: 0;
+}
+
+h2 {
+    font-size: 1.8rem;
+    margin: 2rem 0 1.5rem;
+    padding-bottom: 0.75rem;
+    border-bottom: 2px solid var(--medium-gray);
+    position: relative;
+}
+
+h2:after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 100px;
+    height: 3px;
+    background-color: var(--accent-color);
+}
+
+h3 {
+    font-size: 1.4rem;
+    color: var(--dark-gray);
+    margin: 1.8rem 0 1rem;
+}
+
+p {
+    margin: 0 0 1.2rem;
+    line-height: 1.7;
+}
+
+/* Listas */
+ul, ol {
+    padding-left: 1.5rem;
+    margin: 1rem 0;
+}
+
+li {
+    margin-bottom: 0.75rem;
+    line-height: 1.6;
+}
+
+/* Cajas destacadas */
+.highlight-box {
+    background-color: #f0f7ff;
+    border-left: 4px solid var(--primary-color);
+    padding: 1.5rem;
+    margin: 2rem 0;
+    border-radius: 0 4px 4px 0;
+}
+
+.contact-info {
+    background-color: #f8f9fa;
+    border: 1px solid #e9ecef;
+    border-radius: 4px;
+    padding: 1.5rem;
+    margin: 2rem 0;
+}
+
+.contact-info h3 {
+    margin-top: 0;
+    color: var(--primary-color);
+}
+
+/* Imágenes */
+.image-placeholder {
+    background-color: #f1f3f5;
+    height: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 2rem 0;
+    border: 2px dashed #ced4da;
+    border-radius: 4px;
+    color: #868e96;
+    font-style: italic;
+    text-align: center;
+    padding: 1rem;
+}
+.site-footer{
+    background-color: var(--dark-gray);
+    color: (white);
+    text-align: center;
+    padding: 1.5rem 0;
+    margin-top: 2rem;
+    font-size: 0.9rem;
+}
+
+/* Enlaces */
+a {
+    color: var(--primary-color);
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+a:hover {
+    color: var(--secondary-color);
+    text-decoration: underline;
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+    .container {
+        padding: 0 1.5rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .tabs {
+        flex-direction: column;
+        border-bottom: none;
+    }
+    
+    .tab-button {
+        width: 100%;
+        margin: 0 0 5px 0;
+        border-radius: 4px;
+        border: 1px solid var(--medium-gray);
+        text-align: left;
+    }
+    
+    .tab-button.active {
+        border-bottom: 1px solid var(--accent-color);
+    }
+    
+    .tab-content {
+        padding: 1.5rem;
+    }
+    
+    h2 {
+        font-size: 1.6rem;
+    }
+    
+    h3 {
+        font-size: 1.3rem;
+    }
+}
+
+/* Botones */
+.btn {
+    display: inline-block;
+    font-weight: 500;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    user-select: none;
+    border: 1px solid transparent;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: 0.25rem;
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+.btn-primary:hover {
+    background-color: var(--secondary-color);
+    border-color: var(--secondary-color);
+    color: #fff;
+    text-decoration: none;
+}
