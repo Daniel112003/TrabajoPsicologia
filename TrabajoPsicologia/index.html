@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Información sobre el consumo responsable de cannabis y sustancias psicoactivas. Conoce los efectos, riesgos y recursos disponibles.">
+    <title>Información sobre Cannabis | Prevención de Consumo</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="header-content">
+                <h1>Información sobre el Cannabis</h1>
+                <p>Conoce los efectos, riesgos y recursos disponibles para un consumo responsable</p>
+                <div class="breadcrumb">
+                    <a href="#">Inicio</a> / <span>Información sobre Cannabis</span>
+                </div>
+            </div>
+        </header>
+        
+
+
+        <nav class="tabs-container">
+            <div class="tabs">
+                <button class="tab-button active" onclick="openTab(event, 'introduccion')" aria-selected="true" role="tab" id="tab-introduccion">
+                    <span class="tab-icon">ℹ️</span>
+                    <span class="tab-text">Introducción</span>
+                </button>
+                <button class="tab-button" onclick="openTab(event, 'efectos')" role="tab" id="tab-efectos">
+                    <span class="tab-icon">⚠️</span>
+                    <span class="tab-text">Efectos</span>
+                </button>
+                <button class="tab-button" onclick="openTab(event, 'consumo')" role="tab" id="tab-consumo">
+                    <span class="tab-icon">🔄</span>
+                    <span class="tab-text">Formas de Consumo</span>
+                </button>
+                <button class="tab-button" onclick="openTab(event, 'prevencion')" role="tab" id="tab-prevencion">
+                    <span class="tab-icon">🛡️</span>
+                    <span class="tab-text">Prevención</span>
+                </button>
+                <button class="tab-button" onclick="openTab(event, 'ayuda')" role="tab" id="tab-ayuda">
+                    <span class="tab-icon">🆘</span>
+                    <span class="tab-text">Ayuda y Recursos</span>
+                </button>
+            </div>
+        </nav>
+
+        <!-- Pestaña de Introducción -->
+        <div id="introduccion" class="tab-content active">
+            <h2>¿Qué es el Cannabis?</h2>
+            <p>El cannabis es una planta que contiene más de 100 compuestos conocidos como cannabinoides, siendo los principales:</p>
+            <ul>
+                <li><strong>THC (tetrahidrocannabinol):</strong> responsable del efecto psicoactivo.</li>
+                <li><strong>CBD (cannabidiol):</strong> no es psicoactivo, se estudia por posibles usos terapéuticos.</li>
+            </ul>
+            
+            <div class="image-container">
+                <img src="Imagenes/Thc.png" alt="Estructura molecular del THC y CBD" class="content-image">
+                <p class="image-caption">Estructura molecular del THC y CBD</p>
+            </div>
+
+            <h3>¿Cómo actúa en el cerebro?</h3>
+            <p>El THC se une a receptores encargados de regular memoria, emociones, coordinación y percepción del tiempo. Por eso, después de consumir cannabis, varias funciones cognitivas pueden alterarse temporalmente.</p>
+        </div>
+
+        <!-- Pestaña de Efectos -->
+        <div id="efectos" class="tab-content">
+            <h2>Efectos en la Salud</h2>
+            <p>El cannabis puede afectar distintas áreas de la vida. Los riesgos son mayores en personas menores de 21 años debido al desarrollo cerebral.</p>
+            
+            <h3>Efectos en la salud mental y física</h3>
+            <ul>
+                <li>Problemas de atención y memoria</li>
+                <li>Alteración del aprendizaje</li>
+                <li>Dificultad para planificar y tomar decisiones</li>
+                <li>Crisis de ansiedad o ataques de pánico</li>
+                <li>Riesgo de psicosis en personas vulnerables</li>
+                <li>Irritación de vías respiratorias (si se fuma)</li>
+                <li>Alteraciones del sueño</li>
+            </ul>
+
+            <div class="image-container">
+                <img src="Imagenes/PuntosAfectados.png" alt="Puntos afectados por el cannabis en el cerebro" class="content-image">
+                <p class="image-caption">Áreas del cerebro afectadas por el consumo de cannabis</p>
+            </div>
+
+            <h3>Impacto en la vida diaria</h3>
+            <ul>
+                <li>Bajas calificaciones o bajo rendimiento laboral</li>
+                <li>Aislamiento social</li>
+                <li>Cambios de ánimo y mayor irritabilidad</li>
+                <li>Falta de motivación</li>
+                <li>Problemas familiares o de pareja</li>
+                <li>Menor participación en actividades cotidianas</li>
+            </ul>
+        </div>
+
+        <!-- Pestaña de Formas de Consumo -->
+        <div id="consumo" class="tab-content">
+            <h2>Formas de Consumo</h2>
+            <p>Existen diferentes formas de consumir cannabis, cada una con sus propios riesgos:</p>
+            
+            <ul>
+                <li><strong>Fumado:</strong> Inhalamos el humo de la planta seca.</li>
+                <li><strong>Vaporizado:</strong> Calentamiento sin combustión, reduciendo algunos daños pulmonares.</li>
+                <li><strong>Comestibles:</strong> Alimentos o bebidas que contienen cannabis.</li>
+                <li><strong>Aceites:</strong> Extractos concentrados que pueden ingerirse o usarse tópicamente.</li>
+            </ul>
+
+            <div class="highlight-box">
+                <h4>¡Importante!</h4>
+                <p>Cada forma de consumo tiene riesgos diferentes, especialmente los comestibles, que tardan más en hacer efecto (hasta 2 horas), lo que puede llevar a una sobredosificación accidental.</p>
+            </div>
+
+            <div class="image-container">
+                <img src="Imagenes/Marihuana.png" alt="Diferentes formas de consumo de cannabis" class="content-image">
+                <p class="image-caption">Diferentes formas de consumo de cannabis</p>
+            </div>
+
+            <div class="image-container" style="float: right; max-width: 300px; margin: 0 0 20px 30px;">
+                <img src="Imagenes/AdiccionFin.png" alt="Señales de adicción" class="content-image">
+                <p class="image-caption">Reconoce las señales de consumo problemático</p>
+            </div>
+            <h3>Señales de consumo problemático</h3>
+            <p>Si aparecen dos o más de estas señales, podría tratarse de un consumo problemático:</p>
+            <ul>
+                <li>Consumir más de lo planeado</li>
+                <li>Intentar dejarlo sin éxito</li>
+                <li>Necesitar más cantidad para sentir el mismo efecto (tolerancia)</li>
+                <li>Consumir a solas con frecuencia</li>
+                <li>Usar cannabis para "calmar" emociones</li>
+                <li>Falta de energía o motivación</li>
+                <li>Olvidar cosas que antes no se olvidaban</li>
+                <li>Descuidar estudios, trabajo o relaciones</li>
+                <li>Irritabilidad o ansiedad cuando no se consume</li>
+            </ul>
+        </div>
+
+        <!-- Pestaña de Prevención -->
+        <div id="prevencion" class="tab-content">
+            <h2>Prevención y Reducción de Daños</h2>
+            <p>La prevención no solo es "no consumir". También es tener herramientas para reducir daños:</p>
+            
+            <ul>
+                <li>Evitar el consumo en menores de 21 años</li>
+                <li>No mezclar cannabis con alcohol u otras sustancias</li>
+                <li>No conducir ni manejar maquinaria bajo los efectos</li>
+                <li>Evitar el uso diario</li>
+                <li>Preferir formas no fumadas para reducir irritación pulmonar</li>
+                <li>No consumir en espacios cerrados sin ventilación</li>
+                <li>Evitar consumo si hay antecedentes familiares de psicosis, depresión severa o trastornos de ansiedad</li>
+            </ul>
+
+            <div class="image-container">
+                <img src="Imagenes/AdiccionInicio.png" alt="Estrategias de reducción de daños" class="content-image">
+                <p class="image-caption">Estrategias para la prevención y reducción de daños</p>
+            </div>
+
+            <h3>Rompiendo el estigma</h3>
+            <p>El estigma impide que las personas busquen ayuda. Es importante recordar:</p>
+            <ul>
+                <li>Consumir no hace a nadie "malo" o "irresponsable"</li>
+                <li>El consumo problemático es un asunto de salud, no un fallo personal</li>
+                <li>Escuchar sin juzgar favorece que las personas hablen</li>
+                <li>El lenguaje importa: evitar palabras como "vicioso", "adicto", "colgado"</li>
+            </ul>
+
+            <h3>Cómo hablar del tema sin estigmatizar</h3>
+            <div class="highlight-box">
+                <p><strong>En lugar de:</strong> "Ese vicio te está dañando la vida."</p>
+                <p><strong>Prueba con:</strong> "¿Cómo te has sentido con tu consumo últimamente?"</p>
+            </div>
+            <p>Ofrece apoyo en lugar de reproches.</p>
+        </div>
+
+        <!-- Pestaña de Ayuda y Recursos -->
+        <div id="ayuda" class="tab-content">
+            <h2>¿Cómo apoyar a alguien que consume?</h2>
+            <ul>
+                <li>Elige un momento tranquilo para conversar</li>
+                <li>Describe comportamientos, no ataques personales</li>
+                <li>Escucha sin interrumpir</li>
+                <li>Ofrece acompañamiento: "¿Te gustaría que busquemos ayuda juntos?"</li>
+                <li>Establece límites sin amenazas</li>
+                <li>Evita confrontaciones agresivas</li>
+            </ul>
+
+            <div class="contact-info">
+                <h3>Líneas de apoyo telefónico / virtual</h3>
+                <ul>
+                    <li><strong>Línea Psicoactiva</strong> (para consumo problemático):<br>01-8000-112 439 / 301-276-1197</li>
+                    <li><strong>Línea 106</strong> (atención y escucha psicológica):<br>Marca 106 o WhatsApp 300 754 8933 — gratuita, disponible para cualquier persona</li>
+                    <li><strong>Línea 123</strong> (emergencias):<br>Para crisis graves o urgencias en salud mental</li>
+                </ul>
+            </div>
+
+            <h3>Centros de tratamiento y rehabilitación</h3>
+            <p><strong>Centro de Salud Nuevas Delicias</strong> — tratamiento integral para personas con consumo problemático.</p>
+            
+            <h4>Qué ofrecen</h4>
+            <p>Asesoría, orientación, canalización a servicios médicos/psicológicos, tratamiento, acompañamiento, escucha profesional, atención en crisis, reducción de riesgos, rehabilitación.</p>
+            
+            <div class="highlight-box">
+                <h4>Recuerda</h4>
+                <p>Pedir ayuda no es debilidad: es cuidado. Si tú o alguien que conoces tiene dificultades con el consumo de cannabis (o cualquier sustancia), o notas señales de alerta, estas líneas y centros están habilitados para acompañarte.</p>
+            </div>
+
+            <div class="image-container">
+                <img src="Imagenes/Mujer triste.png" alt="Personas recibiendo apoyo y asesoría" class="content-image">
+                <p class="image-caption">Apoyo profesional disponible para quienes lo necesiten</p>
+            </div>
+        </div>
+    </div>
+
+    <footer class="site-footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Recursos Adicionales</h3>
+                <ul>
+                    <li><a href="https://www.minsalud.gov.co/" target="_blank" rel="noopener">Ministerio de Salud y Protección Social</a></li>
+                    <li><a href="https://www.minsalud.gov.co/salud/publica/SMental/Paginas/salud-mental-y-convivencia-social.aspx" target="_blank" rel="noopener">Salud Mental - Minsalud</a></li>
+                    <li><a href="https://www.minsalud.gov.co/salud/publica/SMental/Paginas/Sustancias-psicoactivas.aspx" target="_blank" rel="noopener">Más mente, más prevención</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Contacto</h3>
+                <p>Línea de atención al ciudadano: <strong>01 8000 955 590</strong></p>
+                <p>Correo electrónico: <a href="mailto:contactenos@minsalud.gov.co">contactenos@minsalud.gov.co</a></p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p> 2025 Ministerio de Salud y Protección Social. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script>
+        function openTab(evt, tabName) {
+            // Ocultar todos los contenidos de las pestañas
+            var tabContents = document.getElementsByClassName("tab-content");
+            for (var i = 0; i < tabContents.length; i++) {
+                tabContents[i].classList.remove("active");
+                tabContents[i].setAttribute('aria-hidden', 'true');
+            }
+
+            // Desactivar todos los botones de las pestañas
+            var tabButtons = document.getElementsByClassName("tab-button");
+            for (var i = 0; i < tabButtons.length; i++) {
+                tabButtons[i].classList.remove("active");
+                tabButtons[i].setAttribute('aria-selected', 'false');
+            }
+
+            // Mostrar la pestaña actual y activar el botón
+            var activeTab = document.getElementById(tabName);
+            activeTab.classList.add("active");
+            activeTab.setAttribute('aria-hidden', 'false');
+            
+            evt.currentTarget.classList.add("active");
+            evt.currentTarget.setAttribute('aria-selected', 'true');
+            
+            // Actualizar la URL con el hash de la pestaña
+            history.pushState(null, null, '#' + tabName);
+            
+            // Enfocar el contenido de la pestaña para accesibilidad
+            activeTab.setAttribute('tabindex', '-1');
+            activeTab.focus();
+            
+            // Desplazamiento suave al inicio del contenido
+            window.scrollTo({
+                top: document.querySelector('.tabs-container').offsetTop - 20,
+                behavior: 'smooth'
+            });
+        }
+        
+        // Cargar la pestaña correcta al cargar la página
+        document.addEventListener('DOMContentLoaded', function() {
+            // Obtener el hash de la URL
+            var hash = window.location.hash.substring(1);
+            
+            // Si hay un hash válido, abrir esa pestaña
+            if (hash) {
+                var tabToOpen = document.getElementById(hash) ? 
+                    document.querySelector(`[onclick*="${hash}"]`) : 
+                    document.querySelector('.tab-button');
+                if (tabToOpen) tabToOpen.click();
+            } else {
+                // Por defecto, abrir la primera pestaña
+                document.querySelector('.tab-button').click();
+            }
+            
+            // Manejar el botón de retroceso/adelante del navegador
+            window.addEventListener('popstate', function() {
+                var hash = window.location.hash.substring(1);
+                if (hash) {
+                    var tabToOpen = document.querySelector(`[onclick*="${hash}"]`);
+                    if (tabToOpen) tabToOpen.click();
+                }
+            });
+        });
+    </script>
+</body>
+</html>
